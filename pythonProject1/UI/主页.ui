@@ -1,0 +1,1329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>970</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>高考助手</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="address-book-new">
+    <normaloff>../../高考助手beta版/UI</normaloff>../../高考助手beta版/UI</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">selection-color: rgb(83, 250, 250);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_7">
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QTextEdit" name="textEdit_time">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>335</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>800</width>
+           <height>65</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>false</bold>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>此处为操作提示框，当前没有查询操作</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>74</height>
+       </size>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>考生省份</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="lineEdit_sch">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="placeholderText">
+          <string>输入完整学校名称</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>年</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="lineEdit_year">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="placeholderText">
+          <string>2018-2023</string>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>类型</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>学校名称</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QComboBox" name="comboBox">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>理科</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>文科</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>综合</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>物理类</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>历史类</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="comboBox_pro">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>河南</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>河北</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>北京</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>天津</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>山东</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>山西</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>内蒙古</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>辽宁</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>吉林</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>黑龙江</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>上海</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>江苏</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>浙江</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>安徽</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>福建</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>江西</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>湖北</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>湖南</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>广东</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>广西</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>海南</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>重庆</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>四川</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>贵州</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>云南</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>西藏</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>陕西</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>甘肃</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>青海</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>宁夏</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>新疆</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_intro">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>查学校简介</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_score">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>查专业分数线</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_plan">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>查招生计划</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="pushButton_ana">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>数据分析</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1200</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_check">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>检测网络状态</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../icon/attachment.png</normaloff>../icon/attachment.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_check">
+         <property name="text">
+          <string>使用前请检测网络状态，若网络异常，请1分钟后重试。</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="3">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="minimumSize">
+       <size>
+        <width>950</width>
+        <height>440</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>专业分数线</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="1" column="1">
+         <widget class="QWidget" name="widget" native="true">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <column>
+           <property name="text">
+            <string>专业</string>
+           </property>
+           <property name="font">
+            <font>
+             <underline>false</underline>
+            </font>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>平均分</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>最低分</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>最低位次</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>批次</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>招生计划</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidget_2">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <column>
+           <property name="text">
+            <string>专业</string>
+           </property>
+           <property name="font">
+            <font>
+             <underline>false</underline>
+            </font>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>招生人数</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>学制</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>学费（年）</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>批次</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>学校简介</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidget_4">
+          <row>
+           <property name="text">
+            <string>学校名称</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>地址</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>网站</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>电话</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>邮箱</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>归属</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>校训</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>类型</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>占地面积</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>软科排名</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>校友会排名</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>办学层次</string>
+           </property>
+          </row>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>填报志愿</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="1" column="6">
+         <widget class="QPushButton" name="pushButton_aspire">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>27</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>志愿推荐</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../icon/fabulous.png</normaloff>../icon/fabulous.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="7">
+         <widget class="QTableWidget" name="tableWidget_3">
+          <column>
+           <property name="text">
+            <string>学校名称</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>填报建议</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>学校代码</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>办学性质</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>学校类型</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>历年情况(分数、位次、招生人数)</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>招生计划（人）</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>招生专业</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QComboBox" name="comboBox_pro_2">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>河南</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>河北</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>北京</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>天津</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>山东</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>山西</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>内蒙古</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>辽宁</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>吉林</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>黑龙江</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>上海</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>江苏</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>浙江</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>安徽</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>福建</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>江西</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>湖北</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>湖南</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>广东</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>广西</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>海南</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>重庆</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>四川</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>贵州</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>云南</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>西藏</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>陕西</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>甘肃</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>青海</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>宁夏</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>新疆</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="comboBox_subject">
+          <property name="minimumSize">
+           <size>
+            <width>130</width>
+            <height>25</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>理科</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>文科</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QComboBox" name="comboBox_batch">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>本科一批</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>本科二批</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>专科批</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="lineEdit_sec">
+          <property name="placeholderText">
+           <string>考生位次</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLineEdit" name="lineEdit_score">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>考生对应2023年分数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="5">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>河南考生只需要填写考生位次，无需填写对应2023年分数。其他省份只需填写对应2023年分数。</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_vis"/>
+   <addaction name="separator"/>
+   <addaction name="action_ana"/>
+   <addaction name="separator"/>
+   <addaction name="action_ana_score"/>
+   <addaction name="separator"/>
+   <addaction name="action_clear"/>
+   <addaction name="separator"/>
+   <addaction name="action_help"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="action_ana">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/chart-bar.png</normaloff>../icon/chart-bar.png</iconset>
+   </property>
+   <property name="text">
+    <string>数据分析（最低位次）</string>
+   </property>
+   <property name="toolTip">
+    <string>统计最低位次变化情况（F2）</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/help.png</normaloff>../icon/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>帮助（ 暂未启用，有疑问请联系1277252513@qq.com ）</string>
+   </property>
+   <property name="toolTip">
+    <string>查看使用说明</string>
+   </property>
+  </action>
+  <action name="action_ana_score">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/chart-bar.png</normaloff>../icon/chart-bar.png</iconset>
+   </property>
+   <property name="text">
+    <string>数据分析（最低分）</string>
+   </property>
+   <property name="toolTip">
+    <string>统计最低分变化情况（F3）</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="action_clear">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/refresh.png</normaloff>../icon/refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>刷新</string>
+   </property>
+   <property name="toolTip">
+    <string>刷新页面（F5）</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="action_vis">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/data-view.png</normaloff>../icon/data-view.png</iconset>
+   </property>
+   <property name="text">
+    <string>专业分数线统计</string>
+   </property>
+   <property name="toolTip">
+    <string>专业分数线可视化（F1）</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_sch</tabstop>
+  <tabstop>lineEdit_year</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>pushButton_plan</tabstop>
+  <tabstop>pushButton_score</tabstop>
+  <tabstop>pushButton_check</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>textEdit_time</tabstop>
+  <tabstop>tableWidget_2</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_clear</sender>
+   <signal>triggered()</signal>
+   <receiver>tableWidget</receiver>
+   <slot>clearContents()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>422</x>
+     <y>431</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_clear</sender>
+   <signal>triggered()</signal>
+   <receiver>tableWidget_2</receiver>
+   <slot>clearContents()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_clear</sender>
+   <signal>triggered()</signal>
+   <receiver>lineEdit_sch</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_score</sender>
+   <signal>clicked()</signal>
+   <receiver>tableWidget</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>569</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>422</x>
+     <y>413</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_plan</sender>
+   <signal>clicked()</signal>
+   <receiver>tableWidget_2</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>657</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_clear</sender>
+   <signal>triggered()</signal>
+   <receiver>lineEdit_year</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>384</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_clear</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit_time</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>660</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_clear</sender>
+   <signal>triggered()</signal>
+   <receiver>tableWidget_3</receiver>
+   <slot>clearContents()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_clear</sender>
+   <signal>triggered()</signal>
+   <receiver>lineEdit_sec</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>61</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_clear</sender>
+   <signal>triggered()</signal>
+   <receiver>tableWidget_4</receiver>
+   <slot>clearContents()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>60</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

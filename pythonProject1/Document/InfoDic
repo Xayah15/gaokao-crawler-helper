@@ -1,0 +1,46 @@
+学校分数线 = {
+  "e_sort":
+  "e_sorttype":
+  "local_province_id": 区别省份
+  "local_type_id": 科目
+  "page": 页码
+  "school_id": 学校代码
+  "signsafe": 安全签名
+  "size": 行数
+  "uri": "apidata/api/gk/score/province" 显示 对应学校的最值分数
+  "year": 年份
+}
+
+各专业分数线 = {
+  "local_batch_id":
+  "local_province_id": 区别省份
+  "local_type_id": 理科1,文科2
+  "page": 页码
+  "school_id": 学校
+  "signsafe": 安全签名
+  "size": 行数
+  "special_group": "" 可能固定空值  空值显示全部内容
+  "uri": "apidata/api/gk/score/special" 显示 对应院校的专业（special）的分数（score）
+  "year": 年份
+}
+
+招生计划 = {
+  "local_batch_id":
+  "local_province_id":  区别省份
+  "local_type_id": 学科类别
+  "page": 页码
+  "school_id": 学校
+  "signsafe": 安全签名
+  "size": 行数
+  "special_group": "" 可能固定空值
+  "uri": "apidata/api/gkv3/plan/school" 显示 对应院校的招生计划（plan）
+  "year": 年份
+}
+
+初始链接: https://api.zjzw.cn/web/api
+包含请求参数的链接: https://api.zjzw.cn/web/api/?local_batch_id=14&local_province_id=35&local_type_id=2074&page=1&school_id=459&size=10&special_group=&uri=apidata/api/gkv3/plan/school&year=2023
+
+
+批次和科目字典地址：https://static-data.gaokao.cn/www/2.0/config/dicprovince/dic.json
+学校ID字典：https://static-gkcx.gaokao.cn/www/2.0/json/live/v2/schoolnum.json
+学校排名字典：https://static-data.gaokao.cn/www/2.0/school/31/rank.json
